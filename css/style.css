@@ -83,6 +83,7 @@ body {
 
 .desc {
   color: #dddbff;
+  font-size: 1.2em;
   font-weight: 400;
   margin-bottom: 1em;
 }
@@ -124,6 +125,7 @@ body {
 
 .info {
   color: #dddbff;
+  font-size: 0.9em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,6 +173,7 @@ body {
 
 .float__left {
   color: #adafb8;
+  font-size: 1em;
   font-weight: 700;
   margin-top: 0.3em;
 }
@@ -209,9 +212,12 @@ body {
   .card-2 {
     padding: 40px 30px 50px;
   }
+  .desc {
+    text-align: center;
+  }
   .float {
-    left: 60%;
     top: 75%;
+    left: 60%;
     -webkit-transform: translateX(-60%);
             transform: translateX(-60%);
   }
@@ -225,7 +231,7 @@ body {
 
 @media screen and (max-width: 468px) {
   body {
-    font-size: 15px;
+    font-size: 12px;
   }
   .container {
     padding: 0 1em;
@@ -233,14 +239,21 @@ body {
   .card-1 {
     padding: 30px 100px 30px 30px;
   }
-  .desc {
-    text-align: center;
+  .float {
+    top: 80%;
+    left: 70%;
+    -webkit-transform: translateX(-70%);
+            transform: translateX(-70%);
+  }
+  .float__size {
+    font-size: 3em;
+    font-weight: 700;
   }
 }
 
 @media screen and (max-width: 350px) {
   body {
-    font-size: 12px;
+    font-size: 10px;
   }
   .logo {
     width: 120px;
@@ -250,6 +263,12 @@ body {
   }
   .card-2 {
     padding: 20px 20px 40px;
+  }
+  .float {
+    top: 80%;
+    left: 75%;
+    -webkit-transform: translateX(-75%);
+            transform: translateX(-75%);
   }
 }
 /*# sourceMappingURL=style.css.map */
